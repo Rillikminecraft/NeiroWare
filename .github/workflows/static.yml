@@ -1,43 +1,60 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Главная</title>
+</head>
+<body>
+    <style>
+       body { background: rgb(83,83,102);
+        background: linear-gradient(93deg, rgba(83,83,102,1) 100%, rgba(250,243,238,0.966999299719888) 100%);
+       }
 
-on:
-  # Runs on pushes targeting the default branch
-  push:
-    branches: ["main"]
+       u1 {
+        color: white
+       }
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+       li {
+        color: white
+       }
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
-
-jobs:
-  # Single deploy job since we're just deploying
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          # Upload entire repository
-          path: '.'
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+       .glav {
+          display: inline-block;
+          padding: 20px 59px;
+          background-color: #fdfdfd;
+          color: #000000;
+          font-size: 16px;
+          text-decoration: none;
+          border-radius: 5px;
+        }
+        
+        .glav:hover {
+          background-color: #898386;
+        }
+        
+        .glav:active {
+          background-color: #29c218;
+        }
+    </style>
+    
+    <h1>Особенности NeiroWare</h1>
+    <ul>
+        <b><li>Скоро чит выйдет </li></b>
+        <b><li>Быстрая поддержка</li></b>
+        <b><li>Чит бесплатный</li></b>
+        <b><li>Хорошая сбалансированя подписка PRO</li></b>
+    </ul>
+    <br>
+    <br>
+    <a href="https://rillikminecraft.github.io/NeiroWare/download.html" class="glav">Скачать чит</a>
+    <a href="https://rillikminecraft.github.io/NeiroWare/rules.html" class="glav">Правила</a>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p>Site by BeluPaster</p>
+</body>
+</html>
